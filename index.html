@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante Sabor & Arte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Botão voltar -->
+  <a href="../../index.html" class="back-btn">← Voltar para o portfólio</a>
+
+  <header class="header">
+    <h1>Restaurante Sabor & Arte</h1>
+    <p>Comida caseira com sabor especial</p>
+  </header>
+
+  <section class="filters">
+    <button data-category="all" class="active">Todos</button>
+    <button data-category="prato">Pratos</button>
+    <button data-category="bebida">Bebidas</button>
+    <button data-category="sobremesa">Sobremesas</button>
+  </section>
+
+  <section class="menu container" id="menu"></section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+      <strong id="modal-price"></strong>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
